@@ -1,0 +1,73 @@
+.fitness {
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 8rem;
+  }
+
+  &__container {
+    border-radius: 4rem;
+    padding: 4rem 7rem 0rem;
+    background-color: $color-black;
+    background-image: linear-gradient(290deg, $color-black, $color-grey-4);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+      padding: 6rem 5rem 0rem;
+      gap: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      grid-template-columns: 1fr;
+      padding: 5rem 4rem 0rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  &__logo {
+    width: 12rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 10rem;
+    }
+  }
+
+  &__image {
+    position: relative;
+    justify-self: center;
+    display: flex;
+    max-width: 44rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 30rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__heading {
+    color: $color-white;
+  }
+
+  &__sub {
+    max-width: 50rem;
+    color: $color-white;
+  }
+
+  &__btn {
+    align-self: flex-start;
+  }
+}

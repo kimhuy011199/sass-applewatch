@@ -1,0 +1,98 @@
+.family {
+  padding: 8rem 0rem;
+  border-top: $border;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+  }
+
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 6rem;
+    text-align: center;
+
+    h2 {
+      @media only screen and (max-width: $bp-small) {
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__sub {
+    text-align: center;
+    max-width: 90rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      gap: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__box {
+    padding: 5rem;
+    border-radius: 2rem;
+    transition: all 0.3s;
+    background-color: $color-grey-5;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 3rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 85%;
+    }
+  }
+
+  &__para {
+    margin-top: 1.6rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__image {
+    margin: 5rem 0rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 40rem;
+      margin: 3rem auto;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

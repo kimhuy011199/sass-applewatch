@@ -1,0 +1,116 @@
+.health {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: $color-grey-5;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__title {
+    margin-top: 1.8rem;
+  }
+
+  &__heading {
+    @media only screen and (max-width: $bp-large) {
+      max-width: 32rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 32rem;
+    }
+  }
+
+  &__para {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__image {
+    position: relative;
+    justify-self: center;
+    display: flex;
+    max-width: 32rem;
+
+    @media only screen and (max-width: $bp-large) {
+      max-width: 28rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 24rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      max-width: 26rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 22rem;
+    }
+  }
+
+  &__next,
+  &__prev {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: $color-primary;
+    cursor: pointer;
+  }
+
+  &__next {
+    right: -4rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      right: -3rem;
+    }
+  }
+
+  &__prev {
+    left: -3.5rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      left: -2.5rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    transform: translateX(0.8rem);
+  }
+
+  &__box {
+    position: absolute;
+    width: 68%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+  }
+
+  &__feature {
+    width: 100%;
+    transition: all 0.3s;
+  }
+
+  &__hidden {
+    display: none;
+  }
+}

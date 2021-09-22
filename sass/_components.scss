@@ -1,0 +1,41 @@
+.btn {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 1rem 2.5rem;
+  border-radius: 50rem;
+  display: inline-block;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.4rem;
+  }
+
+  &--full:link,
+  &--full:visited {
+    background-color: $color-primary;
+    color: $color-white !important;
+    transition: all 0.3s;
+  }
+
+  &--full:hover,
+  &--full:active {
+    background-color: $color-secondary;
+  }
+
+  &--text:link,
+  &--text:visited {
+    padding: 0;
+    color: $color-primary;
+    transition: all 0.3s;
+  }
+
+  &--text > span {
+    display: inline-block;
+    transition: all 0.3s;
+  }
+
+  &--text:hover > span,
+  &--text:active > span {
+    transform: translateX(1rem);
+  }
+}
